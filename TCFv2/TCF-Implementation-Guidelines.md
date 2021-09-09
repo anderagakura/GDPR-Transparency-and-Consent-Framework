@@ -24,7 +24,7 @@ Policy FAQ, webinars, and other resources are available at
 &nbsp;&nbsp;&nbsp;&nbsp;**[What is OOB?](#oob)**<br>
 ### [Publisher guidelines](#pub)
 &nbsp;&nbsp;&nbsp;&nbsp;**[What is a Consent Management Platform (CMP) and why do I, as a Publisher, need one?](#whatiscmp)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;**[What publisher controls are available? What happened to Pubvendors?](#pubvendor)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**[What publisher controls are available? What happened to Pubvendors?](#pubvendors)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;**[The Global Vendor List](#gvl)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;**[Withdrawal of consent](#withdraw)**<br>
 ### [Vendor guidelines (DSPs, Agencies, DMPs)](#vendor)
@@ -115,7 +115,7 @@ Changes across the Framework are listed below and grouped according to supportin
 - Includes recent policy updates
 - Better wording to distinguish between “policy version” and “GVL version”
 
-### Within the Consent Management Platform API
+### Within the Consent Management Platform API<a name="changecmp"></a>
 - Event Listeners, Support for CMP status change, such as when a user makes an active choice, and a new TC string is generated
 - New parameter order
 - New function signature name
@@ -238,8 +238,10 @@ DMP in this document refers to enterprise software that can be used by publisher
 # Consent Management Platform (CMP) guidelines<a name="cmp"></a>
 This section outlines implementation guidelines for CMPs to be compliant with the TCF technical specification when collecting, storing and sharing user consent.
 
-Register to be on the CMP list: https://register.consensu.org/ 
-This step is required to be a TCF recognised CMP trusted by vendors receiving the consents that you collect. Upon registration a CMP is assigned an ID, which is passed with each request, and granted access to the “consensu.org” domain for accessing and modifying the global consent cookie.
+Register to be on the CMP list: https://register.consensu.org/. This step is required to be a TCF recognised CMP trusted by vendors receiving the consents that you collect. Upon registration a CMP is assigned an ID, which is passed with each request. Since September 1st 2021, new registering CMPs are no longer granted access to the “consensu.org” domain. CMPs who have been registered with the TCF before September 1st 2021 can continue to hots their tags at <code>https://[cmpname].mgr.consensu.org/</code>. 
+
+Note: it is the intention of the managing organisation at some point in the future to retire "consensus.org".
+
 
 ## 1. Collecting consent from users<a name="collectconsent"></a>
 The TCF defines a set of common purposes and features that vendors can act on. Vendors are responsible for providing up-to-date information on the purposes they support and the legal basis under which they wish to operate these purposes. This information is captured in the  Global Vendor List (GVL). 
@@ -258,9 +260,7 @@ As a CMP, you will need to:
 - Share the TC String with vendors through the available APIs.
 
 ## 3. Storing Consent<a name="storeconsent"></a>
-Depending on the publisher preference and on the policy requirements, consent can be stored either locally or globally. When storing the consent globally, the consent will be stored in a shared cookie with the “TC String” format on the “consensu.org” domain.
-
-CMPs are free to also store consent separately and with a different format if they need to (first-party cookies, long term proof of consent storage, etc.) provided that – if consent is being stored globally – they keep the shared cookie up-to-date with their local changes.
+In version 2 of the TCF Specifications, the storage mechanism used for service-specific and group-specific TC Strings is up to a CMP, including any non-cookie storage mechanism.
 
 For long-term storage, the following methods are common across CMPs:
 
@@ -318,7 +318,7 @@ At this time, the IAB Europe Transparency and Consent Framework is designed for 
 ## Related resources<a name="resources"></a>
 A v2 consent string encoder/decoder can be found here: https://iabtcf.com/#/ as well as links to further implementation libraries.
 
-### Will these FAQ be updated? <a name="updates"></a>
+### Will these FAQ be updated? <a name="faqupdates"></a>
 Yes, these guidelines will be updated as questions arise. A wiki with more dynamic content has been proposed, but timelines have not yet been determined.
 
 ### How can I learn more?<a name="learnmore"></a>
