@@ -93,7 +93,7 @@ Prescribed use of the TCF may support compliance with the GDPR, but the real ben
 
 To participate in the use of the TCF, vendors must make a public attestation of compliance with the [Policies](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/) for using it. To have transparency and consent established and signaled status for your online services stored in a global database, apply to be added to the [GVL](#the-global-vendor-list). To play a role in creating a TC String for signaling status on transparency and user consent, sign up with IAB Europe to become a CMP. CMPs must follow technical standards provided in this document for creating TC Strings in compliance with TCF [Policies](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/). They must also follow technical standards guidance for using the CMP API specified in this document to receive and process information provided in a TC String.
 
-### TCF Canada (:canada:)
+### TCF Canada (<span>&#x1f1e8;&#x1f1e6;</span>)
 
 This specification is also used by TCF Canada. As described above, the original TCF was designed to support compliance of the GDPR in Europe. As such, when reading the specification from a TCF Canada perspective, please consider the following:
 
@@ -103,7 +103,7 @@ This specification is also used by TCF Canada. As described above, the original 
 *  References to "special feature opt ins" should be read as "special feature express consent"
 *  References to a "Right to Object" should be read as a user exercising an "Objection"
 
-The adoption of this specification is virtually identical for TCF Canada - look out for differences in this document, which are highlighted using the :canada: icon.
+The adoption of this specification is virtually identical for TCF Canada - look out for differences in this document, which are highlighted using the <span>&#x1f1e8;&#x1f1e6;</span> icon.
 
 ### Audience
 
@@ -512,7 +512,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-     <td>IsServiceSpecific <br/><br/> :canada: <i>Not used in TCF Canada</i></td>
+     <td>IsServiceSpecific <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Not used in TCF Canada</i></td>
       <td>1 bit</td>
       <td><code>1</code> true<br /><code>0</code> false</td>
       <td>
@@ -540,7 +540,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
     </tr>
     <tr>
       <td>
-       SpecialFeatureOptIns <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+       SpecialFeatureOptIns <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>12 bits</td>
       <td>
         One bit for each Special Feature:<br /><br /><code>1</code> Opted
@@ -565,7 +565,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
         <p>
           (renamed from PurposesAllowed)
         </p>
-       :canada: <i>Field name changed in TCF Canada</i>
+       <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i>
       </td>
       <td>24 bits</td>
       <td>
@@ -583,7 +583,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>PurposesLITransparency <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+      <td>PurposesLITransparency <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:<br /><code>1</code> legitimate interest
@@ -610,7 +610,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>PurposeOneTreatment <br/><br/> :canada: <i>Not used in TCF Canada</i></td>
+      <td>PurposeOneTreatment <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Not used in TCF Canada</i></td>
       <td>1 bit</td>
       <td>
         <code>1</code> Purpose 1 was NOT disclosed at all.<br /><br /><code
@@ -627,7 +627,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>PublisherCC <br/><br/> :canada: <i>Not used in TCF Canada</i></td>
+      <td>PublisherCC <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Not used in TCF Canada</i></td>
       <td>12 bits</td>
       <td>
         <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"
@@ -762,7 +762,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
     </tr>
     <tr style="background-color:#000;color:#FFF;">
       <td colspan="4">
-        <strong>Vendor Legitimate Interest Section</strong> <br/><br/> :canada: <i>Section name changed in TCF Canada</i>
+        <strong>Vendor Legitimate Interest Section</strong> <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Section name changed in TCF Canada</i>
       </td>
     </tr>
     <tr>
@@ -897,7 +897,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr style="background-color:#000;color:#FFF;">
-      <td><strong>Publisher Restrictions Section</strong> <br/><br/> :canada: <i>Not used in TCF Canada</i></td>
+      <td><strong>Publisher Restrictions Section</strong> <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Not used in TCF Canada</i></td>
       <td colspan="3">
         <strong
           >The content of this section is optional EXCEPT for
@@ -1061,7 +1061,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
 
 The _**DisclosedVendors**_ is an optional TC String segment that records which vendors have been disclosed to a given user by a CMP. It may be used by a CMP while [storing](#how-should-a-transparency--consent-string-be-stored) TC Strings, but must not be included in the TC String when returned by the CMP API.
 
-:canada: <i>Not used in TCF Canada</i>
+<span>&#x1f1e8;&#x1f1e6;</span> <i>Not used in TCF Canada</i>
 
 <table>
   <thead>
@@ -1239,7 +1239,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-eu)**_ segmen
       </td>
     </tr>
     <tr>
-      <td>PubPurposesConsent <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+      <td>PubPurposesConsent <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:
@@ -1260,7 +1260,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-eu)**_ segmen
       </td>
     </tr>
     <tr>
-      <td>PubPurposesLITransparency <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+      <td>PubPurposesLITransparency <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:<br /><code>1</code> legitimate interest
@@ -1296,7 +1296,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-eu)**_ segmen
       </td>
     </tr>
     <tr>
-      <td>CustomPurposesConsent <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+      <td>CustomPurposesConsent <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>NumCustomPurposes</td>
       <td>
         One bit for each Custom Purpose:
@@ -1311,7 +1311,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-eu)**_ segmen
       </td>
     </tr>
     <tr>
-      <td>CustomPurposesLITransparency <br/><br/> :canada: <i>Field name changed in TCF Canada</i></td>
+      <td>CustomPurposesLITransparency <br/><br/> <span>&#x1f1e8;&#x1f1e6;</span> <i>Field name changed in TCF Canada</i></td>
       <td>NumCustomPurposes</td>
       <td>
         One bit for each Custom Purpose:<br /><code>1</code> legitimate
@@ -1481,7 +1481,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>SpecialFeatureExpressConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>SpecialFeatureExpressConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>12 bits</td>
       <td>
         One bit for each Special Feature:<br /><br /><code>1</code> Opted
@@ -1501,7 +1501,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>PurposesExpressConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>PurposesExpressConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:<br /><br /><code>1</code> 
@@ -1519,7 +1519,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
       </td>
     </tr>
     <tr>
-      <td>PurposesImpliedConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>PurposesImpliedConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:<br /><code>1</code> implied consent
@@ -1660,7 +1660,7 @@ Note the TC String format for the EU and Canada are virtually identical. Differe
     </tr>
     <tr style="background-color:#000;color:#FFF;">
       <td colspan="4">
-        <strong>Vendor Implied Consent Section</strong> <br/><br/><i>:canada: Section name changed</i>
+        <strong>Vendor Implied Consent Section</strong> <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Section name changed</i>
       </td>
     </tr>
     <tr>
@@ -1830,7 +1830,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-canada)**_ se
       </td>
     </tr>
     <tr>
-      <td>PubPurposesExpressConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>PubPurposesExpressConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:
@@ -1851,7 +1851,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-canada)**_ se
       </td>
     </tr>
     <tr>
-      <td>PubPurposesImpliedConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>PubPurposesImpliedConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>24 bits</td>
       <td>
         One bit for each Purpose:<br /><code>1</code> implied consent
@@ -1887,7 +1887,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-canada)**_ se
       </td>
     </tr>
     <tr>
-      <td>CustomPurposesExpressConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>CustomPurposesExpressConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>NumCustomPurposes</td>
       <td>
         One bit for each Custom Purpose:
@@ -1902,7 +1902,7 @@ The _**[Publisher TC](#publisher-purposes-transparency-and-consent-canada)**_ se
       </td>
     </tr>
     <tr>
-      <td>CustomPurposesImpliedConsent <br/><br/><i>:canada: Field name changed</i></td>
+      <td>CustomPurposesImpliedConsent <br/><br/><i><span>&#x1f1e8;&#x1f1e6;</span> Field name changed</i></td>
       <td>NumCustomPurposes</td>
       <td>
         One bit for each Custom Purpose:<br /><code>1</code> implied
